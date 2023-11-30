@@ -1,0 +1,18 @@
+<div
+  id="tokengating-example-app"
+  data-product_id="{{ product.id }}"
+  data-product_gated="{{ product.gated? }}">
+  Tokengating example app block placeholder
+</div>
+<script async type="module" src="{{ "index.js" | asset_url }}"></script>
+<link rel="stylesheet" href="{{ "index.css" | asset_url }}">
+
+{% schema %}
+  {
+    "name": "Tokengate",
+    "target": "section",
+    "templates": ["product"],
+    "settings": []
+  }
+{% endschema %}
+
