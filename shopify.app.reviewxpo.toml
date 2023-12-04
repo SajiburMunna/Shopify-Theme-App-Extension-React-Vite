@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "ReviewXpo"
+client_id = "9557a9ae6daad8422876070b39c4e0a6"
+application_url = "https://shopify.revews.dev/-/home"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [ "https://shopify.revews.dev/-/authenticate" ]
+
+[webhooks]
+api_version = "2023-01"
+
+[app_proxy]
+url = "https://shopify.revews.dev/"
+subpath = "reviewxpo"
+prefix = "apps"
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "testjouleslabs.myshopify.com"

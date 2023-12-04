@@ -1,0 +1,13 @@
+<div id="rvxpo_rating_widget" 
+  data-config='{{ shop.metafields.reviewxpo.rating_widget_config.value | json }}' 
+  data-rating='{{ product.metafields.reviewxpo.rating.value | json }}'>
+</div>
+
+{% schema %}
+  {
+    "name": "ReviewXpo Ratings",
+    "target": "section",
+    "templates": ["product"],
+    "settings": []
+  }
+{% endschema %}

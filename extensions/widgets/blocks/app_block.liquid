@@ -1,15 +1,14 @@
 <div
-  id="tokengating-example-app"
+  id="react-rvxpo_reviews_widget"
   data-product_id="{{ product.id }}"
-  data-product_gated="{{ product.gated? }}">
-  Tokengating example app block placeholder
+  data-product_gated="{{ product.gated? }}"> 
 </div>
 <script async type="module" src="{{ "index.js" | asset_url }}"></script>
 <link rel="stylesheet" href="{{ "index.css" | asset_url }}">
 
 {% schema %}
   {
-    "name": "Tokengate",
+    "name": "React Reviews Widget",
     "target": "section",
     "templates": ["product"],
     "settings": []

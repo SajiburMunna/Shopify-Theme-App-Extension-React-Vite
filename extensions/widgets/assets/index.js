@@ -7509,8 +7509,7 @@ reactDom_production_min.version = "18.2.0-next-9e3b772b8-20220608";
   }
 })(reactDom);
 const ReactDOM = /* @__PURE__ */ getDefaultExportFromCjs(reactDom.exports);
-const styles$1 = "";
-const styles = "";
+const widgets = "";
 var jsxRuntime = { exports: {} };
 var reactJsxRuntime_production_min = {};
 /**
@@ -7543,17 +7542,18 @@ reactJsxRuntime_production_min.jsxs = q;
     module.exports = reactJsxRuntime_production_min;
   }
 })(jsxRuntime);
+const Fragment = jsxRuntime.exports.Fragment;
 const jsx = jsxRuntime.exports.jsx;
-function App() {
+function Card() {
   return /* @__PURE__ */ jsx("div", {
-    style: {
-      color: "white",
-      background: "yellow",
-      padding: "10px",
-      borderRadius: "10px"
-    },
-    children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus quam eaque incidunt iusto libero recusandae blanditiis nihil impedit temporibus numquam, aut perspiciatis ducimus assumenda, atque, fuga explicabo nesciunt. Voluptates."
+    className: "rvxp-text-green-500 container",
+    children: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam in suscipit, quia pariatur soluta illo magnam labore mollitia molestiae quibusdam exercitationem quisquam ex inventore consectetur enim accusamus. Eveniet, sunt voluptatibus.34"
   });
 }
-const container = document.getElementById("tokengating-example-app");
+function App() {
+  return /* @__PURE__ */ jsx(Fragment, {
+    children: /* @__PURE__ */ jsx(Card, {})
+  });
+}
+const container = document.getElementById("react-rvxpo_reviews_widget");
 ReactDOM.createRoot(container).render(/* @__PURE__ */ jsx(App, {}));
