@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom";
 import React from "react";
-
 import "../src/css/widgets.css"; 
 import App from "./App";
 
